@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
-import Jokes from "./components/Jokes";
 import Register from "./components/Register";
+import Login from "./components/Login";
+import Jokes from "./components/Jokes";
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <div className="App">
         <Switch>
           <Route path="/register" render={props => <Register {...props} />} />
+          <Route path="/login" render={props => <Login {...props} />} />
           <Route path="/jokes" render={props => <Jokes {...props} />} />
         </Switch>
       </div>

@@ -30,11 +30,13 @@ class Jokes extends Component {
       <div>
         <ul>
           {this.state.jokes.map((element, index) => {
-            <li key={index}>
-              <div>
-                {element.setup}? {element.punchline}{" "}
-              </div>
-            </li>;
+            return (
+              <li key={index}>
+                <div>
+                  {element.setup}? {element.punchline}:{" "}
+                </div>
+              </li>
+            );
           })}
         </ul>
         {this.state.jokes.length === 0 ? (
