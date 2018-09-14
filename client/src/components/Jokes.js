@@ -24,11 +24,12 @@ class Jokes extends Component {
         });
     }
   }
+
   render() {
     return (
       <div>
         <ul>
-          {this.state.map((element, index) => {
+          {this.state.jokes.map((element, index) => {
             <li key={index}>
               <div>
                 {element.setup}? {element.punchline}{" "}
