@@ -27,7 +27,7 @@ async function register(req, res) {
 
 async function login(req, res) {
   if (!req.body.username || !req.body.password) {
-    res.status(400).json({ message: "Invalid boyd" });
+    res.status(400).json({ message: "Invalid body" });
     return;
   }
   try {
